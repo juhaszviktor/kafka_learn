@@ -1,0 +1,13 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+mainClassName = "org.jviktor.learn.KafkaLearn"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.apache.kafka:kafka_2.11:0.8.2.2'
+    compile 'org.apache.kafka:kafka-clients:0.8.2.1'
+}
